@@ -1,0 +1,57 @@
+{
+  "name": "trpc-stytch-node",
+  "author": "brian@delicious-simplicity.com",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "lint": "next lint",
+    "postinstall": "pnpm prisma:generate",
+    "prisma:generate": "pnpm prisma generate",
+    "prisma:init": "pnpm prisma:push && pnpm prisma:seed",
+    "prisma:push": "pnpm prisma db push",
+    "prisma:seed": "pnpm prisma db seed",
+    "prisma:studio": "pnpm prisma studio",
+    "start": "next start",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.1.0",
+    "@prisma/client": "^4.13.0",
+    "@tanstack/react-query": "^4.29.5",
+    "@trpc/client": "10.21.1",
+    "@trpc/next": "10.21.1",
+    "@trpc/react-query": "10.21.1",
+    "@trpc/server": "10.21.1",
+    "clsx": "^1.2.1",
+    "cookies-next": "^2.1.1",
+    "next": "13.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.8",
+    "react-phone-number-input": "^3.2.20",
+    "sharp": "^0.32.0",
+    "stytch": "^6.2.2",
+    "superjson": "^1.12.3",
+    "tsx": "^3.12.6",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.39.0",
+    "eslint-config-next": "^13.3.1",
+    "postcss": "^8.4.23",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "prisma": "^4.13.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.0.4"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}
