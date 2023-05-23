@@ -8,3 +8,5 @@ export * from './PhoneInput';
 export * from './SiteHeader';
 export * from './VerifyOtp';
 export * from './Profile';
+export * from './Welcome';
+export * from './LoginButton';

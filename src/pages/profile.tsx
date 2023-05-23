@@ -1,7 +1,7 @@
 import { Profile } from '~/components';
 import { trpc } from '~/utils/trpc';
 
-export default function AccountPage() {
+export default function ProfilePage() {
   const { data: user } = trpc.user.current.useQuery();
 
   return (

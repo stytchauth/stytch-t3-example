@@ -1,4 +1,4 @@
-import { AccountDelete, AccountLogout } from '~/components';
+import { AccountLogout } from '~/components';
 import { trpc } from '~/utils/trpc';
 
 export function Profile() {
@@ -14,7 +14,7 @@ export function Profile() {
       <p>
         You are logged in, and a Session has been created. The backend Node SDK has stored the
         Session as a JWT in the browser cookies as{" "}
-        <span className="code">stytch_session_jwt</span>.
+        <span className="code">session_jwt</span>.
       </p>
       <AccountLogout />
   </div>

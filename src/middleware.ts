@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 import { loadStytch } from '~/server/stytch';
 
 export const config = {
-  matcher: ['/dashboard', '/signin'],
+  matcher: ['/profile', '/login'],
 };
 
 export const middleware = async (req: NextRequest) => {
@@ -16,17 +16,17 @@ export const middleware = async (req: NextRequest) => {
       const stytch = loadStytch();
       await stytch.sessions.authenticateJwt(jwtToken);
 
-      if (pathname === '/signin') {
-        return NextResponse.redirect(new URL('/dashboard', req.url));
+      if (pathname === '/login') {
+        return NextResponse.redirect(new URL('/profile', req.url));
       }
     } catch (err) {
       res.cookies.delete('session_jwt');
-      return NextResponse.redirect(new URL('/signin', req.url), { headers: res.headers });
+      return NextResponse.redirect(new URL('/login', req.url), { headers: res.headers });
     }
   }
 
-  if (!jwtToken && pathname === '/dashboard') {
-    return NextResponse.redirect(new URL('/signin', req.url));
+  if (!jwtToken && pathname === '/profile') {
+    return NextResponse.redirect(new URL('/login', req.url));
   }
 
   return res;

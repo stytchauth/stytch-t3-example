@@ -20,7 +20,7 @@ export function VerifyOtp(props: { methodId: string; methodValue: string }) {
   const { mutateAsync } = trpc.auth.authenticate.useMutation({
     onSuccess: () => {
       utils.user.current.invalidate();
-      router.push('/dashboard');
+      router.push('/profile');
     },
   });
 

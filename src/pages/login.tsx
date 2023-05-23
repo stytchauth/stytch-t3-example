@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { LoginEmail, LoginSms } from '~/components';
-import { StythAuthMethods } from '~/types/stytch';
+import { StycthAuthMethods } from '~/types/stytch';
 
-export default function SignInPage() {
-  const [method, setMethod] = useState<StythAuthMethods>('otp_email');
+export default function LoginPage() {
+  const [method, setMethod] = useState<StycthAuthMethods>('otp_email');
 
   return (
     <div className='container'>
