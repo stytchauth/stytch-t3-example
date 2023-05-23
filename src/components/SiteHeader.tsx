@@ -25,7 +25,7 @@ export function SiteHeader() {
           />
           View on GitHub
         </Link>
-        {user ? <Link className='header' href='dashboard'>Profile</Link> : <Link className='header' href='/signin'>Log in</Link>}
+        {user ? <Link className='header' href='profile'>Profile</Link> : <Link className='header' href='/login'>Log in</Link>}
       </div>
     </header>
   );

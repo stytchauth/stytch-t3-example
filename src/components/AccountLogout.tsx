@@ -9,7 +9,7 @@ export function AccountLogout() {
   const { mutate } = trpc.auth.logout.useMutation({
     onSuccess: () => {
       utils.user.current.invalidate();
-      router.replace('/signin');
+      router.replace('/login');
     },
   });
 

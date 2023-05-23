@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { type StythAuthMethods } from '~/types/stytch';
+import { type StycthAuthMethods } from '~/types/stytch';
 import { trpc } from '~/utils/trpc';
 import { VALID_PHONE_NUMBER } from '~/utils/regex';
 import { Button } from './Button';
@@ -14,7 +14,7 @@ const formSchema = z.object({
 
 type FormSchemaType = z.infer<typeof formSchema>;
 
-export function LoginSms(props: { onSwitchMethod: (method: StythAuthMethods) => void }) {
+export function LoginSms(props: { onSwitchMethod: (method: StycthAuthMethods) => void }) {
   const { data, mutateAsync } = trpc.auth.loginSms.useMutation();
 
   const {

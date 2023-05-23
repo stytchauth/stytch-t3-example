@@ -7,7 +7,7 @@ html {
 }
 
 pre.code-block {
-  max-height: 200px;
+  max-height: 300px;
   width: 100%;
   overflow: scroll;
   background-color: #10232e;
@@ -96,6 +96,7 @@ span.code {
   border-radius: 4px;
   padding-right: 4px;
   background-color: #ecfaff;
+  font-family: monospace;
 }
 
 h1 {
