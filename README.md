@@ -1,5 +1,9 @@
 # Stytch T3 example application
 
+<p align="center">
+  <img width="1066" alt="t3Example" src="https://github.com/chris-stytch/stytch-t3-example/assets/91094210/d6554592-d6f4-4012-a3b4-82a60e5a1e58" width="750">
+</p>
+
 ## Overview
 
 This example application demonstrates how one may use Stytch within the [T3 stack](https://create.t3.gg/).
