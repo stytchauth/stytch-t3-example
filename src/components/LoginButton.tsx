@@ -6,6 +6,7 @@ export const config = {
   matcher: ['/profile', '/login'],
 };
 
+// This component is used to navigate from the Welcome page to the Login page.
 export function LoginButton() {
   const router = useRouter();
 
