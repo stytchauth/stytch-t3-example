@@ -33,14 +33,14 @@ export function LoginSms(props: { onSwitchMethod: (method: StythAuthMethods) => 
 
   return (
     <form
-      className='flex w-full flex-col gap-y-4 rounded-lg bg-white p-8 text-center shadow-sm'
+      className='flex w-full flex-col gap-y-4 rounded-lg bg-white p-8 text-center shadow-sm border-[#adbcc5] border-[1px]'
       onSubmit={handleSubmit((values) =>
         mutateAsync({ phone: values.phone }).catch((err) => {
           setError('root', { message: err.message });
         }),
       )}
     >
-      <h1 className='text-3xl font-semibold'>Stytch + tRPC Demo</h1>
+      <h1 className='text-3xl font-semibold text-[#19303d]'>Stytch + T3 example</h1>
       <p className='text-neutral-600'>Sign in to your account to continue.</p>
       <div>
         <PhoneInput control={control} />
@@ -51,7 +51,7 @@ export function LoginSms(props: { onSwitchMethod: (method: StythAuthMethods) => 
       </Button>
       {!data?.methodId && (
         <button type='button' className='text-[#19303d] underline' onClick={() => props.onSwitchMethod('otp_email')}>
-          Use email address
+          Or use email address
         </button>
       )}
       {errors && <span className='mt-2 block text-left text-sm text-red-800'>{errors.root?.message}</span>}

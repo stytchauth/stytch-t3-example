@@ -7,3 +7,4 @@ export * from './LoginSms';
 export * from './PhoneInput';
 export * from './SiteHeader';
 export * from './VerifyOtp';
+export * from './Profile';

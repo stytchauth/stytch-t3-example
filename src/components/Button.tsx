@@ -26,7 +26,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
   return (
     <button
       className={clsx(
-        'relative inline-flex items-center justify-center gap-x-2 rounded-md bg-[#19303d] p-3 font-semibold text-white',
+        'relative inline-flex items-center justify-center gap-x-2 rounded bg-[#4a37be] p-3 font-semibold text-white w-full',
         className,
       )}
       disabled={isLoading || disabled}

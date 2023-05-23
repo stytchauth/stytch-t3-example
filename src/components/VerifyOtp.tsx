@@ -35,7 +35,7 @@ export function VerifyOtp(props: { methodId: string; methodValue: string }) {
 
   return (
     <form
-      className='flex w-full flex-col gap-y-4 rounded-lg bg-white p-8 text-center shadow-sm'
+      className='flex w-full flex-col gap-y-4 rounded-lg bg-white p-8 text-center shadow-sm border-[#adbcc5] border-[1px]'
       onSubmit={handleSubmit((values) =>
         mutateAsync({ code: values.code, methodId: methodId }).catch((err) => {
           setError('root', { message: err.message });
