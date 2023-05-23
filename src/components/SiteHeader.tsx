@@ -14,7 +14,7 @@ export function SiteHeader() {
         <Link
           className='header'
           target='_blank'
-          href='https://github.com/stytchauth/stytch-nextjs-example'
+          href='https://github.com/stytchauth/stytch-t3-example'
         >
           <Image
             alt='GitHub'
