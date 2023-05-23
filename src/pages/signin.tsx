@@ -6,7 +6,7 @@ export default function SignInPage() {
   const [method, setMethod] = useState<StythAuthMethods>('otp_email');
 
   return (
-    <div className='container mx-auto -mt-14 grid h-screen max-w-xl place-items-center'>
+    <div className='container'>
       {method === 'otp_sms' && <LoginSms onSwitchMethod={setMethod} />}
       {method === 'otp_email' && <LoginEmail onSwitchMethod={setMethod} />}
     </div>

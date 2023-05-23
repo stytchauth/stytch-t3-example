@@ -19,6 +19,7 @@ export const userRouter = router({
 
     return {
       id: dbUser.id,
+      stytch_user_id: stytchUser.user_id,
       emails: stytchUser.emails,
       phoneNumbers: stytchUser.phone_numbers,
       status: stytchUser.status,

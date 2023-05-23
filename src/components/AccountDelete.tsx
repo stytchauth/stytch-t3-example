@@ -14,7 +14,7 @@ export function AccountDelete() {
   });
 
   return (
-    <Button type='button' isLoading={isLoading} className='bg-red-700' onClick={() => mutate()}>
+    <Button type='button' isLoading={isLoading} className='bg-[#AD2E30]' onClick={() => mutate()}>
       Delete Account
     </Button>
   );

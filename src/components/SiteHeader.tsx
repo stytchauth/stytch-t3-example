@@ -1,16 +1,31 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { trpc } from '~/utils/trpc';
 
 export function SiteHeader() {
   const { data: user } = trpc.user.current.useQuery();
 
   return (
-    <header className='relative bg-[#c7f1ff] p-4'>
-      <div className='container mx-auto flex max-w-7xl justify-between'>
-        <Link href='/' className='font-bold'>
-          Stytch + tRPC Demo
+    <header>
+      <Link className='header' href='/'>
+        <Image alt='sdf' src='logo.svg' width={190} height={200} />
+      </Link>
+      <div className='link-container'>
+        <Link
+          className='header'
+          target='_blank'
+          href='https://github.com/stytchauth/stytch-nextjs-example'
+        >
+          <Image
+            alt='GitHub'
+            src='github.svg'
+            width={20}
+            height={20}
+            style={{ marginRight: '4px' }}
+          />
+          View on GitHub
         </Link>
-        {user ? <Link href='dashboard'>Dashboard</Link> : <Link href='/signin'>Sign in</Link>}
+        {user ? <Link className='header' href='dashboard'>Profile</Link> : <Link className='header' href='/signin'>Log in</Link>}
       </div>
     </header>
   );

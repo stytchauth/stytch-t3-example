@@ -6,7 +6,7 @@ This example application demonstrates how one may use Stytch within the [T3 stac
 
 This project uses Stytch's [Node SDK](https://stytch.com/docs/api) which provides a fully typesafe and backend driven authentication pattern. This allows you to own the frontend and authentication to live alongside your business logic in the backend.
 
-This application features Email Magic Links and SMS One-Time Passcodes (OTP). You can use this application's source code as a learning resource, or use it as a jumping off point for your own project. We are excited to see what you build with Stytch!
+This application features One-Time Passcodes (OTP) sent via either email or SMS. You can use this application's source code as a learning resource, or use it as a jumping off point for your own project. We are excited to see what you build with Stytch!
 
 ## Set up
 
@@ -31,15 +31,15 @@ cd test-stytch-t3-example
 pnpm i
 ```
 
-Next, create `.env.local` file by running the command below which copies the contents of `.env.template`.
+Next, create `.env` file by running the command below which copies the contents of `.env.template`.
 ```bash
-cp .env.template .env.local
+cp .env.template .env
 ```
 
-Open `.env.local` in the text editor of your choice, and set the environment variables using the `project_id` and `secret` found on [API Keys](https://stytch.com/dashboard/api-keys). Leave the `STYTCH_PROJECT_ENV` value as `test`.
+Open `.env` in the text editor of your choice, and set the environment variables using the `project_id` and `secret` found on [API Keys](https://stytch.com/dashboard/api-keys). Leave the `STYTCH_PROJECT_ENV` value as `test`.
 
 ```
-# This is what a completed .env.local file will look like
+# This is what a completed .env file will look like
 STYTCH_PROJECT_ENV=test
 STYTCH_PROJECT_ID=project-test-00000000-0000-1234-abcd-abcdef1234
 STYTCH_SECRET=secret-test-12345678901234567890abcdabcd
@@ -60,7 +60,7 @@ pnpm dev
 
 The application will be available at [`http://localhost:3000`](http://localhost:3000).
 
-You'll be able to login with Email Magic Links or SMS OTP and see your Stytch User object, Stytch Session, and see how logging out works.
+You'll be able to login with Email OTP or SMS OTP and see your Stytch User object, Stytch Session, and see how logging out works.
 
 ## Next steps
 
