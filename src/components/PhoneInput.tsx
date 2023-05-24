@@ -3,7 +3,7 @@ import { type Control } from 'react-hook-form';
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form';
 import flags from 'react-phone-number-input/flags';
 import clsx from 'clsx';
-import { STYTCH_SUPPORTED_SMS_COUNTRIES } from '~/utils/stytch';
+import { STYTCH_SUPPORTED_SMS_COUNTRIES } from '~/utils/phone-countries';
 import { Input } from './Input';
 
 import 'react-phone-number-input/style.css';

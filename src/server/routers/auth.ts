@@ -5,7 +5,7 @@ import { StytchError } from 'stytch';
 import { z } from 'zod';
 import { protectedProcedure, publicProcedure, router } from '~/server/trpc';
 import { VALID_PHONE_NUMBER } from '~/utils/regex';
-import { STYTCH_SUPPORTED_SMS_COUNTRIES } from '~/utils/stytch';
+import { STYTCH_SUPPORTED_SMS_COUNTRIES } from '~/utils/phone-countries';
 
 // Change these values to adjust the length of a user's session. 30 day sessions, like we use here, is usually a good default,
 // but you may find a shorter or longer duration to work better for your app.

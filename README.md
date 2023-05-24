@@ -31,7 +31,7 @@ In your terminal clone the project and install dependencies:
 brew install pnpm
 
 git clone https://github.com/chris-stytch/stytch-t3-example.git
-cd test-stytch-t3-example
+cd stytch-t3-example
 pnpm i
 ```
 
