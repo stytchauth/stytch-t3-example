@@ -159,6 +159,14 @@ export const authRouter = router({
           },
         });
 
+        // Examples of business logic you might want to include on successful user creation:
+        //
+        // Create a Stripe customer for the user.
+        // await ctx.stripe.customers.create({ name: authenticateResponse.user.name.first_name });
+        //
+        // Subscribe the user to a mailing list.
+        // await ctx.mailchimp.lists.addListMember("list_id", { email_address: authenticateResponse.user.emails[0].email, status: "subscribed" });
+
         // 3. Optional: Add custom claims to the session. These claims will be available in the JWT returned by Stytch.
         // 
         // Alternatively this can also be accomplished via a custom JWT template set in the Stytch Dashboard if there are values you want on 
