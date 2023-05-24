@@ -31,13 +31,13 @@ In your terminal clone the project and install dependencies:
 brew install pnpm
 
 git clone https://github.com/chris-stytch/stytch-t3-example.git
-cd test-stytch-t3-example
+cd stytch-t3-example
 pnpm i
 ```
 
 Next, create `.env` file by running the command below which copies the contents of `.env.template`.
 ```bash
-cp .env.template .env
+cp .env.example .env
 ```
 
 Open `.env` in the text editor of your choice, and set the environment variables using the `project_id` and `secret` found on [API Keys](https://stytch.com/dashboard/api-keys). Leave the `STYTCH_PROJECT_ENV` value as `test`.
