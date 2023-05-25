@@ -18,7 +18,7 @@ Follow the steps below to get this application fully functional and running usin
 
 ### In the Stytch Dashboard
 
-1. Create a [Stytch](https://stytch.com/) account. Once your account is set up a Project called "My first project" will be automatically created for you. If you already have a Stytch account, create a new Project.
+1. Create a [Stytch](https://stytch.com/start-now?utm_source=github&utm_content=T3-example-app&utm_campaign=DS_Q22023_Awareness) account. Once your account is set up a Project called "My first project" will be automatically created for you. If you already have a Stytch account, create a new Project.
 
 2. Now navigate to [API Keys](https://stytch.com/dashboard/api-keys). You will need the `project_id` and `secret` values found on this page later on.
 
