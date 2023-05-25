@@ -1,7 +1,7 @@
 # Stytch T3 example application
 
 <p align="center">
-  <img width="750" alt="image" src="https://github.com/chris-stytch/stytch-t3-example/assets/91094210/5d0225c7-ac44-47ae-b2e2-7adb3963dd70">
+  <img width="750" alt="image" src="https://github.com/stytchauth/stytch-t3-example/assets/91094210/fe520723-1609-4a5b-99de-8585d84b5c65">
 </p>
 
 ## Overview
