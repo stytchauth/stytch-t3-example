@@ -4,6 +4,8 @@
   <img width="750" alt="image" src="https://github.com/stytchauth/stytch-t3-example/assets/91094210/fe520723-1609-4a5b-99de-8585d84b5c65">
 </p>
 
+<img src="https://img.shields.io/badge/-community%20built-blue">
+
 ## Overview
 
 This example application demonstrates how one may use Stytch within the [T3 stack](https://create.t3.gg/).
@@ -82,3 +84,7 @@ Join the discussion, ask questions, and suggest new features in our ​[Slack co
 #### :question: Need support?
 
 Check out the [Stytch Forum](https://forum.stytch.com/) or email us at [support@stytch.com](mailto:support@stytch.com).
+
+## Contributing
+
+Built by [Delicious Simplicity](https://www.delicious-simplicity.com/) and Stytch :blue_heart:. Open a pull request or issue to contribute!
