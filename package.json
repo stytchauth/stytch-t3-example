@@ -33,7 +33,7 @@
     "react-hook-form": "^7.43.8",
     "react-phone-number-input": "^3.2.20",
     "sharp": "^0.32.0",
-    "stytch": "^6.2.2",
+    "stytch": "^8.3.0",
     "superjson": "^1.12.3",
     "tsx": "^3.12.6",
     "zod": "^3.21.4"

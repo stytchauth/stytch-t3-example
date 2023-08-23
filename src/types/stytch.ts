@@ -1,4 +1,4 @@
-import { type Session } from 'stytch/types/lib/b2c/shared_b2c';
+import { Session } from 'stytch';
 
 export type StytchAuthMethods = 'otp_email' | 'otp_sms';
 

@@ -8,7 +8,7 @@ export const userRouter = router({
     if (!session) return null;
 
     const [stytchUser, dbUser] = await Promise.all([
-      ctx.stytch.users.get(session.user_id),
+      ctx.stytch.users.get({user_id: session.user_id}),
       ctx.prisma.user.findUniqueOrThrow({
         where: { id: session.custom_claims.db_user_id },
         select: {
