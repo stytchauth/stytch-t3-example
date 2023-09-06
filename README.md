@@ -32,7 +32,7 @@ In your terminal clone the project and install dependencies:
 # If necessary, install pnpm
 brew install pnpm
 
-git clone https://github.com/chris-stytch/stytch-t3-example.git
+git clone https://github.com/stytchauth/stytch-t3-example.git
 cd stytch-t3-example
 pnpm i
 ```

@@ -47,8 +47,8 @@ dependencies:
     specifier: ^0.32.0
     version: 0.32.0
   stytch:
-    specifier: ^6.2.2
-    version: 6.2.2
+    specifier: ^8.3.0
+    version: 8.3.0
   superjson:
     specifier: ^1.12.3
     version: 1.12.3
@@ -3084,9 +3084,9 @@ packages:
       react: 18.2.0
     dev: false
 
-  /stytch@6.2.2:
-    resolution: {integrity: sha512-z3zBNUcSp+45c9HxVEPRhF+dxAk1RdzFBSHMms7rvnReogGNzXH/xTMFE8mpTGE53262WuniRp3Sz3RHyShXMg==}
-    engines: {node: '>= 14.0.0'}
+  /stytch@8.3.0:
+    resolution: {integrity: sha512-wEfdCaeda9lN4jlUwDkpgFjYuH3fr3QOGbdxAwY+uFEoK6q7DnU3pOvOuNKoE7856d3XMnNWn+ijomJ5ft73ow==}
+    engines: {node: '>= 16.0.0'}
     dependencies:
       isomorphic-unfetch: 3.1.0
       jose: 4.14.1
