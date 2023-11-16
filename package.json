@@ -32,7 +32,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.8",
     "react-phone-number-input": "^3.2.20",
-    "sharp": "^0.32.0",
+    "sharp": "^0.32.6",
     "stytch": "^8.3.0",
     "superjson": "^1.12.3",
     "tsx": "^3.12.6",
